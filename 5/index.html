@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> 웹 폼</title>
+	<style>
+		form fieldset {
+			margin: 10px 0;
+		}
+
+		form legend {
+			font-size: 18px;
+			color: rgb(174, 0, 255);
+			font-weight: 600;
+		}
+
+		form label.reg {
+			font-size: 14px;
+			width: 120px;
+			float: left;
+		}
+
+		form label em {
+			font-size: 15px;
+			color: red;
+			font-weight: 800;
+		}
+
+		form ul li {
+			list-style: none;
+			margin: 10px 0;
+		}
+
+		form .easys {
+			text-align: left;
+			font-size: 12px;
+			color: rgb(255, 0, 255);
+		}
+
+		form fieldset.sendform {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<center><h4>수리고등학교 로그인</h4></center>
+	<form>
+		<fieldset class="login">
+			<legend>로그인</legend>
+			<label for="user_id">아이디 </label>
+			<input type="text" id="user_id" size="10" autofocus>
+			<label for="user_pw">비밀번호 </label>
+			<input type="password" id="user_pw" size="10">
+			<input type="submit" value="로그인">
+		</fieldset>
+		<fieldset class="register">
+			<legend>가입하기</legend>
+			<ul>
+				<li>
+					<label class="reg" for="user_name">아이디 <em>*</em></label>
+					<input type="text" id="new_id" size="20" autocomplete="on" required>
+				</li>
+				<li>
+					<label class="reg" for="new_pw1">비밀번호 <em>*</em></label>
+					<input type="password" id="new_pw1" size="20" required>
+				</li>
+				<li>
+					<label class="reg" for="new_pw2">비밀번호 확인 <em>*</em></label>
+					<input type="password" id="new_pw2" size="20" required>
+				</li>
+				<li>
+					<label class="reg" for="user_name">이름 <em>*</em></label>
+					<input type="text" id="user_name" size="20" required>
+				</li>
+				<li>
+					<label class="reg" for="user_mail">메일 주소 <em>*</em></label>
+					<input type="email" id="user_mail" size="20" required>
+				</li>
+				<li>
+					<label class="reg" for="user_tel">전화번호 </label>
+					<input type="tel" id="user_tel" size="20">
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="easys">
+			<legend>수리고등학교</legend>
+			<textarea name="intro" cols="60" rows="5"> 교육의 중심축이 새로운 가치를 창출하고, 더불어 살 줄 아는 창의 융합형 인재 양성으로 전환되고 있습니다.
+ 따라서 본교는 창의적이고 도전적인 미래 핵심 인재들을 육성하기 위해 창의적 사고력과 인문학적 상상력, 그리고 배움에 대한 열정의 신장에 중점을 두고 있습니다.
+
+			</textarea>
+		</fieldset>
+		<fieldset class="sendform">
+			<input type="submit" value="가입하기">
+			<input type="reset" value="다시쓰기">
+		</fieldset>
+	</form>
+</body>
+</html>
